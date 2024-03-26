@@ -14,4 +14,6 @@ std::vector<int> sieve(int n) {
     for (unsigned i = 0; i < n-1; i++)
         if (v[i])
             res.push_back(i + 2);
+
+    return res;
 }
