@@ -35,7 +35,7 @@ char getPair(char c)
         return '(';
     case ']':
         return '[';
-    case '{':
+    case '}':
         return '}';
     case '>':
         return '<';
