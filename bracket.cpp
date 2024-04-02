@@ -44,7 +44,7 @@ char getPair(char c)
     return 0;
 }
 
-bool checkBrackets(std::string str);
+bool checkBrackets(std::string str)
 {
     std::stack<char> s;
     for (c : str)
