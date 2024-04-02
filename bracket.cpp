@@ -47,7 +47,7 @@ char getPair(char c)
 bool checkBrackets(std::string str)
 {
     std::stack<char> s;
-    for (c : str)
+    for (char c : str)
     {
         if (isOpeningBracket(c))
             s.push(c);
