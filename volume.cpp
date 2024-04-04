@@ -1,6 +1,6 @@
 #include <algorithm>
 
-int getMaxVolume(int a, int b, int c, int n, int* arr) {
+int getMaxVolume(int a, int b, int c, int n, int* values{
     int const* maxStart = values;
     int max = 0;
 
