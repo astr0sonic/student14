@@ -2,6 +2,7 @@
 #include <sstream>
 #include <stack>
 #include "rpn.h"
+#include <cmath>
 
 using namespace std;
 
