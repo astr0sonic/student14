@@ -1,0 +1,2 @@
+CAT CAT dog DOG cAt CAT
+CAT
