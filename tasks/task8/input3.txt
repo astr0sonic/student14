@@ -1,2 +1,2 @@
-image.PnG, document.PDF, archive.ZIP, photo.Jpg
+image.PnG, document.PDF, archive.ZIP, photo.jpg
 .jpg
