@@ -36,6 +36,7 @@ std::vector<int> compress(const std::string& inStr) {
 
 
     return res;
+}
 
 std::string decompress(const std::vector<int>& vec) {
     std::ostringstream out;
