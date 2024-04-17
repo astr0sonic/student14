@@ -40,7 +40,7 @@ std::vector<int> compress(const std::string& inStr) {
 
 std::string decompress(const std::vector<int>& vec) {
     std::ostringstream out;
-    unordered_map<unsigned, string> table;
+    map<unsigned, string> table;
 
 
     for (int i = 0; i < 256; i++)
@@ -51,6 +51,7 @@ std::string decompress(const std::vector<int>& vec) {
     auto iter = vec.begin() + 1;
 
     x = table[y];
+    out << x;
     while (iter != vec.end())
     {
         y = *(iter++);
@@ -58,17 +59,21 @@ std::string decompress(const std::vector<int>& vec) {
         string yValue;
 
         if (y < table.size())
+        {
             yValue = table[y];
+            out << yValue;
+            string xy = x + yValue[0];
+            table[table.size()] = xy;
+            x = yValue;
+        }
         else
-            yValue = { x[0] };
-
-        string xy = x + yValue[0];
-        out << x;
-        table[table.size()] = xy;
-        x = yValue;
+        {
+            string xy = x + x[0];
+            table[table.size()] = xy;
+            out << xy;
+            x = xy;
+        }
     }
-
-    out << x;
 
     return out.str();
 }
