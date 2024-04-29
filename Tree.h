@@ -29,4 +29,4 @@ public:
 std::string encode(std::string const&, std::unordered_map<char, std::string> const&);
 std::string encode(std::string const&);
 std::string encodeAndGetCodes(std::string const&, std::unordered_map<char, std::string>&);
-std::string decode(std::string const&, std::map<char, std::string> const&);
+std::string decode(std::string const&, std::map<char, std::string>&);

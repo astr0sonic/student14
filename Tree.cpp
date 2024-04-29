@@ -20,7 +20,7 @@ std::string encodeAndGetCodes(std::string const& in, std::unordered_map<char, st
 	return encode(in, codes);
 }
 
-std::string decode(std::string const& in, std::map<char, std::string> const& codes)
+std::string decode(std::string const& in, std::map<char, std::string>& codes)
 {
 	std::unordered_map<std::string, char> invcodes;
 	for (auto const& p : codes)
